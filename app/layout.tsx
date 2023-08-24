@@ -27,14 +27,14 @@ export default function RootLayout({
           <nav>
             <ul className="flex items-center">
               {links.map(({ href, label }) => (
-                <li key={href} className="px-4 text-2xl">
+                <li key={href} className="px-4 m-4 text-2xl">
                   <Link href={href}>{label}</Link>
                 </li>
               ))}
             </ul>
           </nav>
         </header>
-        <div>{children}</div>
+        <div className="px-4 mx-4">{children}</div>
       </body>
     </html>
   )
